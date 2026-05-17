@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — belle vision</title>
+  <link rel="icon" type="image/png" href="../assets/appicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Hind:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .success-msg {
+      display: none;
+      background: rgba(84,43,235,0.15);
+      border: 1px solid rgba(204,158,244,0.4);
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+      color: var(--light-purple);
+      font-family: var(--font-head);
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav scrolled" id="nav">
+    <a href="../index.html" class="nav-logo">
+      <img src="../assets/logo_white.png" alt="belle vision" />
+    </a>
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="problem.html">The Problem</a>
+      <a href="solution.html">Our Solution</a>
+      <a href="contact.html" class="active nav-cta">Get in Touch</a>
+    </div>
+    <button class="nav-burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <section class="page-hero" style="padding-bottom:2rem;">
+    <div class="page-hero-bg">
+      <div class="aura aura-1"></div>
+      <div class="aura aura-2"></div>
+      <div class="grain"></div>
+    </div>
+    <div class="page-hero-content">
+      <p class="label">Contact Us</p>
+      <h1>Let's talk.</h1>
+      <p>Whether you're a brand wanting to partner, an investor curious about the vision, or someone who just wants early access — we'd love to hear from you.</p>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="contact-wrap">
+        <div class="contact-info fade-in">
+          <p class="label">Get in Touch</p>
+          <h2>We're building the future of beauty. Come join us.</h2>
+          <p>Drop us a message and we'll get back to you as soon as possible. Whether it's a partnership enquiry, early access request, or just a question — we're here.</p>
+
+          <div style="margin:2rem 0;display:flex;flex-direction:column;gap:1.5rem;">
+            <div>
+              <p class="label" style="margin-bottom:0.3rem;">Email us directly</p>
+              <a href="mailto:bellevision11@gmail.com" class="contact-email">
+                📧 bellevision11@gmail.com
+              </a>
+            </div>
+          </div>
+
+          <div style="display:flex;flex-direction:column;gap:1rem;margin-top:1rem;">
+            <div class="card" style="padding:1.5rem;">
+              <strong style="color:var(--light-purple);">🤝 For Brands & Retailers</strong>
+              <p style="font-size:0.9rem;margin-top:0.4rem;">Interested in integrating BELLE Vision into your shopping experience? Let's talk API partnerships.</p>
+            </div>
+            <div class="card" style="padding:1.5rem;border-color:rgba(237,107,66,0.25);background:rgba(237,107,66,0.06);">
+              <strong style="color:var(--orange);">💼 For Investors</strong>
+              <p style="font-size:0.9rem;margin-top:0.4rem;">We're building in a $700B market with a clear edge. Get in touch to learn more about our vision.</p>
+            </div>
+            <div class="card" style="padding:1.5rem;border-color:rgba(237,184,63,0.25);background:rgba(237,184,63,0.06);">
+              <strong style="color:var(--yellow);">✨ Early Access</strong>
+              <p style="font-size:0.9rem;margin-top:0.4rem;">Want to be among the first to try BELLE Vision? Sign up and we'll let you know when we launch.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="fade-in delay-1">
+          <div class="intro-card" style="padding:2.5rem;">
+            <p class="label">Send a Message</p>
+            <form class="contact-form" id="contactForm" action="mailto:bellevision11@gmail.com" method="POST" enctype="text/plain">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+              </div>
+              <div class="form-group">
+                <label for="type">I'm reaching out as a...</label>
+                <select id="type" name="type">
+                  <option value="individual">Individual / Early Access</option>
+                  <option value="brand">Brand / Retailer</option>
+                  <option value="investor">Investor</option>
+                  <option value="press">Press / Media</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Tell us what you're thinking..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Send Message →</button>
+            </form>
+            <div class="success-msg" id="successMsg">
+              ✨ Message sent! We'll be in touch soon.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <img src="../assets/logo_white.png" alt="belle vision" class="footer-logo" />
+      <nav class="footer-nav">
+        <a href="../index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="problem.html">The Problem</a>
+        <a href="solution.html">Our Solution</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p class="footer-copy">© 2026 Belle Vision. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      // Show success message on submit
+      setTimeout(() => {
+        document.getElementById('successMsg').style.display = 'block';
+      }, 500);
+    });
+  </script>
+</body>
+</html>
