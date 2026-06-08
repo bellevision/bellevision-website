@@ -48,7 +48,7 @@
       <p class="hero-sub">AI-powered beauty. Precision personalised for every skin tone.</p>
       <div class="hero-btns">
         <a href="pages/solution.html" class="btn btn-primary">See How It Works</a>
-        <a href="pages/contact.html" class="btn btn-ghost">Get Early Access</a>
+        <a href="#waitlist" class="btn btn-ghost">Join the Waitlist</a>
       </div>
     </div>
     <div class="hero-mark">
@@ -148,6 +148,79 @@
     </div>
   </section>
 
+  <!-- WAITLIST -->
+  <section class="waitlist section" id="waitlist">
+    <div class="waitlist-bg">
+      <div class="aura aura-5"></div>
+      <div class="aura aura-3"></div>
+      <div class="grain"></div>
+    </div>
+    <div class="container">
+      <div class="waitlist-shell">
+        <div class="waitlist-copy fade-in">
+          <p class="label">Waitlist</p>
+          <h2>Be first in line for your perfect match.</h2>
+          <p>Join the BELLE Vision waitlist for launch updates, early access, and first looks at the matching experience we're building for every skin tone.</p>
+          <div class="waitlist-perks">
+            <div class="waitlist-perk">
+              <span>01</span>
+              <p>Early access to the first product release.</p>
+            </div>
+            <div class="waitlist-perk">
+              <span>02</span>
+              <p>Priority invites for product testing and feedback.</p>
+            </div>
+            <div class="waitlist-perk">
+              <span>03</span>
+              <p>Launch updates without the noise.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="intro-card waitlist-card fade-in delay-1">
+          <p class="label">Save Your Spot</p>
+          <form class="contact-form waitlist-form" id="waitlistForm" action="https://formsubmit.co/ajax/bellevision11@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New Belle Vision waitlist signup" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="text" name="_honey" class="hp-field" tabindex="-1" autocomplete="off" />
+
+            <div class="form-group">
+              <label for="waitlist-name">Your Name</label>
+              <input type="text" id="waitlist-name" name="name" placeholder="Jane Smith" autocomplete="name" required />
+            </div>
+            <div class="form-group">
+              <label for="waitlist-email">Email Address</label>
+              <input type="email" id="waitlist-email" name="email" placeholder="jane@example.com" autocomplete="email" required />
+            </div>
+            <div class="form-group">
+              <label for="waitlist-interest">Most excited for</label>
+              <select id="waitlist-interest" name="interest">
+                <option value="shade-matching">Foundation shade matching</option>
+                <option value="cross-brand-discovery">Cross-brand product discovery</option>
+                <option value="early-product-testing">Early product testing</option>
+                <option value="partner-updates">Brand and partner updates</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary waitlist-submit">Join the Waitlist</button>
+            <p class="waitlist-note">No spam. Just launch news, early access and occasional product updates.</p>
+          </form>
+
+          <div class="waitlist-feedback" id="waitlistSuccess" hidden>
+            <strong>You're on the list.</strong>
+            <p>Thanks for signing up. We'll reach out when BELLE Vision is ready for you.</p>
+          </div>
+
+          <div class="waitlist-feedback waitlist-feedback-error" id="waitlistError" hidden>
+            <strong>We couldn't submit that just now.</strong>
+            <p>Please try again in a moment or <a href="pages/contact.html">reach us directly here</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- CTA BAND -->
   <section class="cta-band">
     <div class="cta-band-bg">
@@ -157,7 +230,7 @@
     </div>
     <div class="cta-band-content fade-in">
       <h2>Don't struggle when you can just<br><em>belle vision.</em></h2>
-      <a href="pages/contact.html" class="btn btn-white">Get Early Access</a>
+      <a href="#waitlist" class="btn btn-white">Join the Waitlist</a>
     </div>
   </section>
 

@@ -38,3 +38,37 @@ document.querySelectorAll('.nav-links a').forEach(a => {
     a.classList.add('active');
   }
 });
+
+// Homepage waitlist form
+const waitlistForm = document.getElementById('waitlistForm');
+const waitlistSuccess = document.getElementById('waitlistSuccess');
+const waitlistError = document.getElementById('waitlistError');
+
+waitlistForm?.addEventListener('submit', async (event) => {
+  event.preventDefault();
+
+  waitlistSuccess?.setAttribute('hidden', '');
+  waitlistError?.setAttribute('hidden', '');
+  waitlistForm.classList.add('is-submitting');
+
+  try {
+    const response = await fetch(waitlistForm.action, {
+      method: 'POST',
+      body: new FormData(waitlistForm),
+      headers: {
+        Accept: 'application/json'
+      }
+    });
+
+    if (!response.ok) {
+      throw new Error('Waitlist request failed');
+    }
+
+    waitlistForm.reset();
+    waitlistSuccess?.removeAttribute('hidden');
+  } catch (error) {
+    waitlistError?.removeAttribute('hidden');
+  } finally {
+    waitlistForm.classList.remove('is-submitting');
+  }
+});
